@@ -1,0 +1,120 @@
+.skills {
+  background-color: var(--bg-primary);
+  position: relative;
+}
+
+.section-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--text-tertiary);
+}
+
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-12);
+  margin-top: var(--space-12);
+}
+
+.skills-bars,
+.skills-tags {
+  flex: 1;
+  min-width: 300px;
+}
+
+.skills-bars h3,
+.skills-tags h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-6);
+  position: relative;
+  display: inline-block;
+}
+
+.skills-bars h3::after,
+.skills-tags h3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--accent);
+  border-radius: 2px;
+}
+
+.skill-bars-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.skill-item {
+  width: 100%;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+}
+
+.skill-info h4 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.skill-info span {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background-color: var(--bg-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--color-accent-300));
+  border-radius: 4px;
+}
+
+.skill-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.skill-tag {
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--bg-tertiary);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .skills-content {
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+  
+  .skills-bars,
+  .skills-tags {
+    width: 100%;
+  }
+}

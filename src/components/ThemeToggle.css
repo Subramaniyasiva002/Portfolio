@@ -1,0 +1,40 @@
+.theme-toggle {
+  width: 50px;
+  height: 28px;
+  background-color: var(--bg-tertiary);
+  border-radius: 14px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.toggle-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  color: white;
+}
+
+:root.dark-mode {
+  --bg-primary: var(--color-primary-900);
+  --bg-secondary: var(--color-primary-800);
+  --bg-tertiary: var(--color-primary-700);
+  
+  --text-primary: var(--color-primary-50);
+  --text-secondary: var(--color-primary-200);
+  --text-tertiary: var(--color-primary-400);
+  
+  --accent: var(--color-accent-400);
+}
