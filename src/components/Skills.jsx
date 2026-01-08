@@ -19,7 +19,7 @@ const Skills = () => {
   ];
   
   const technologies = [
-    'React', 'Express', 'MongoDB', 'MySQL', 
+    'Python','Agent','RAG','Fine tune', 'MySQL', 
     'Bootstrap', 'JavaScript', 'TailwindCSS', 'Git',
      'Python', 'Vue.js'
   ];
